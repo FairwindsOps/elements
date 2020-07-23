@@ -1,7 +1,7 @@
 # Fairwinds Elements
-Fariwinds Elements is a suite of open source software to help manage Kubernetes infrastructure at enterprise scale backed by support from Fairwinds.
+Fairwinds Elements is a suite of open source software to help manage Kubernetes infrastructure at enterprise scale backed by support from Fairwinds.
 
-Getting the right in-house expertise and cluster-add-ons to get to production-ready kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated. 
+Getting the right in-house expertise and cluster add-ons to get to production-ready Kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated. 
 
 How do you find the right add ons, what are best practices for using them, and how do they all work together cohesively? Fairwinds Elements is a clear and trusted answer to these problems, to increase speed to production and reduce trial-and-error exponentially.
 
