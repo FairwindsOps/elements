@@ -1,11 +1,15 @@
 # Fairwinds Elements
-Fariwinds Elements is a suite of open source software to help manage Kubernetes infrastructure at enterprise scale.
+Fariwinds Elements is a suite of open source software to help manage Kubernetes infrastructure at enterprise scale backed by support from Fairwinds.
 
-Standing up Kubernetes is increasingly easy, but operating it effectively is still complicated, our hope is this combination of software and opinions make operating Kuberentes at scale easier.
+Getting the right in-house expertise and cluster-add-ons to get to production-ready kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated. 
+
+How do you find the right add ons, what are best practices for using them, and how do they all work together cohesively? Fairwinds Elements is a clear and trusted answer to these problems, to increase speed to production and reduce trial-and-error exponentially.
+
+There are other solutions out there that provide opinionated setups and software but require vendor lock-in. Fairwinds Elements leverages best-in-class Open Source tooling in a cohesive way to provide a "vanilla Kubernetes" setup independant on any single vendor.
 
 To **get started** with **Fairwinds Elements** please read the [Quick Start Guide](/quickstart/).
 
-Visit [https://www.fairwinds.com/elements](https://www.fairwinds.com/elements) for more information on why you should use **Fairwinds Elements**.
+Visit [https://www.fairwinds.com/elements](https://www.fairwinds.com/elements) for more information on why you should use **Fairwinds Elements** or to get in touch about a support subscription.
 
 This repository contains the source code for Fairwinds Elements documentation. If you're looking for individual components, they live in their own repositories.
 
@@ -32,7 +36,7 @@ Please see below for links and descriptions of each component:
 Goldilocks is also available in Fairwinds Insights.
 - [Fairwinds Terraform Library](NEEDSLINK) - Fairwinds Terraform Library
 
-We welcome your input! If you have feedback, please [submit an issue][issues]. If you'd like to participate in development, please read the "Working on Documentation" section below and [submit a pull request][prs].
+We welcome your input. If you have feedback, please [submit an issue][issues]. If you'd like to participate in development, please read the "Working on Documentation" section below and [submit a pull request][prs].
 
 # Working on Documentation
 
@@ -46,7 +50,7 @@ The Elements project welcomes contributions from all developers. The high level 
 
 ## Requirements
 
-Probably you should be running kubernetes eh.
+Fairwinds Elements assumes the existence of Kubernetes, the necessity or value of various components of Fairwinds Elements will change based on where the Kubernetes cluster is running (AWS vs. GCP or Azure vs. Datacenter etc...)
 
 ### Local Installation
 
