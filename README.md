@@ -20,7 +20,7 @@ Please see below for links and descriptions of each component:
 - [Goldilocks](https://github.com/FairwindsOps/goldilocks ) - By using the Kubernetes vertical-pod-autoscaler in recommendation mode, we can see a suggestion for resource requests on each of our apps. Goldilocks creates a VPA for each deployment in a namespace and then queries them for information. —
 Goldilocks is also available in Fairwinds Insights.
 - [Nova](https://github.com/FairwindsOps/Nova) - Nova scans your cluster for installed Helm charts, then cross-checks them against all known Helm repositories. If it finds an updated version of the chart you're using, or notices your current version is deprecated, it will let you know.
-- [Gemini](lkhttps://github.com/FairwindsOps/gemini) - Gemini is a Kubernetes CRD and operator for managing VolumeSnapshots. This allows you
+- [Gemini](https://github.com/FairwindsOps/gemini) - Gemini is a Kubernetes CRD and operator for managing VolumeSnapshots. This allows you
 to back up your PersistentVolumes on a regular schedule, retire old backups, and restore backups with minimal downtime.
 - [Pluto](https://github.com/FairwindsOps/pluto) - This is a very simple utility to help users find deprecated Kubernetes apiVersions in their code repositories and their helm releases.
 
