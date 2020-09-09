@@ -39,10 +39,11 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 - [external-dns](https://github.com/kubernetes-sigs/external-dns) - ExternalDNS synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
 - [metrics-server](https://github.com/kubernetes-sigs/metrics-server) - Provides resource usage metrics, such as container CPU and memory usage.
 - [cluster-autoscaler](https://github.com/kubernetes/autoscaler) - Automatically adjusts the size of a Kubernetes Cluster so that all pods have a place to run and there are no unneeded nodes.
+(AWS Only):
 - [aws-alb-ingress-controller](https://github.com/kubernetes-sigs/aws-alb-ingress-controller) - The AWS ALB Ingress Controller satisfies Kubernetes ingress resources by provisioning Application Load Balancers.
 - [aws-iam-authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator) - A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster. 
 
-We welcome your input. If you have feedback, please [submit an issue][issues].
+We welcome your input. If you have feedback, please submit an issue.
 
 ## Requirements
 
