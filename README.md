@@ -33,11 +33,10 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 
 ### Cluster Add-Ons
 - [RBAC-manager](https://github.com/FairwindsOps/rbac-manager) - This is an operator that supports declarative configuration for RBAC with new custom resources. Instead of managing role bindings or service accounts directly, you can specify a desired state and RBAC Manager will make the necessary changes to achieve that state.
-- [metrics-server (AWS only)](https://github.com/kubernetes-sigs/metrics-server) - https://github.com/kubernetes-sigs/metrics-server
+- [metrics-server (AWS only)](https://github.com/kubernetes-sigs/metrics-server) - Provides resource usage metrics, such as container CPU and memory usage. 
 - [nginx-ingress](https://github.com/kubernetes/ingress-nginx) - Controller to manage Nginx configurations base on Kubernetes Ingress objects
 - [cert-manager](https://github.com/jetstack/cert-manager) - Automatically provision and manage TLS certificates in Kubernetes
 - [external-dns](https://github.com/kubernetes-sigs/external-dns) - ExternalDNS synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
-- [metrics-server](https://github.com/kubernetes-sigs/metrics-server) - Provides resource usage metrics, such as container CPU and memory usage.
 - [cluster-autoscaler](https://github.com/kubernetes/autoscaler) - Automatically adjusts the size of a Kubernetes Cluster so that all pods have a place to run and there are no unneeded nodes.
 (AWS Only):
 - [aws-alb-ingress-controller](https://github.com/kubernetes-sigs/aws-alb-ingress-controller) - The AWS ALB Ingress Controller satisfies Kubernetes ingress resources by provisioning Application Load Balancers.
