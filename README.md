@@ -1,7 +1,7 @@
 # Fairwinds Elements
 Fairwinds Elements is a suite of open source software to help manage Kubernetes infrastructure at enterprise scale used in Fairwinds' ClusterOps Managed Service and/or backed by Fairwinds Elements Support offering.
 
-Getting the right in-house expertise and cluster add-ons to get achieve _and_ operate production-ready Kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated. 
+Getting the right in-house expertise and cluster add-ons to get achieve _and_ operate production-ready Kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated.
 
 Fairwinds Elements leverages best-in-class Open Source software in a cohesive way to provide a complete platform independant of any single vendor.
 
@@ -43,7 +43,6 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 #### Security & Compliance
 - [cert-manager](https://github.com/cert-manager/cert-manager) - Automate TLS certificate management
 - [External Secrets](https://github.com/external-secrets/external-secrets) - Securely inject secrets
-- [Falco](https://github.com/falcosecurity/falco) - Runtime security monitoring
 - [RBAC Manager](https://github.com/FairwindsOps/rbac-manager) - Simplify Kubernetes RBAC policies
 - [Cloudflare Origin CA Issuer](https://github.com/cloudflare/origin-ca-issuer) - Cloudflare certificate integration
 - [AWS Private CA Issuer](https://github.com/cert-manager/aws-privateca-issuer) - AWS Private CA management
@@ -67,22 +66,19 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 #### CI/CD & Workload Management
 - [Argo CD](https://github.com/argoproj/argo-cd) - GitOps continuous deployment
 - [Helm Release Pruner](https://github.com/FairwindsOps/helm-release-pruner) - Cleanup outdated Helm releases
-- [Gitlab Runner](https://docs.gitlab.com/runner/install/kubernetes/) - Run CI/CD jobs on Kubernetes
 
 #### Storage & Persistent Volumes
 - [AWS EBS CSI Driver](https://github.com/kubernetes-sigs/aws-ebs-csi-driver) - Manage EBS volumes in Kubernetes
 - [AWS EFS CSI Driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver) - Manage EFS volumes in Kubernetes
-- [Docker Registry](https://github.com/distribution/distribution) - Container registry for Kubernetes
 
 #### Maintenance & Upgrades
 - [kured](https://github.com/kubereboot/kured) - Automated Kubernetes node reboots
 - [Telepresence](https://github.com/telepresenceio/telepresence) - Simplify local Kubernetes development
-- [Gloo](https://github.com/solo-io/gloo) - API gateway and service mesh solutions 
 
 We welcome your input. If you have feedback, please submit an issue.
 
 ## Requirements
 
-Fairwinds Elements assumes the existence of Kubernetes, the necessity or value of various components of Fairwinds Elements will change based on where the Kubernetes cluster is running (AWS vs. GCP or Azure vs. Datacenter etc...). Fairwinds Elements can be leveraged as individual components, or together as a whole. 
+Fairwinds Elements assumes the existence of Kubernetes, the necessity or value of various components of Fairwinds Elements will change based on where the Kubernetes cluster is running (AWS vs. GCP or Azure vs. Datacenter etc...). Fairwinds Elements can be leveraged as individual components, or together as a whole.
 
 **Not there yet? For a service involving setting up Kubernetes and installing all of these components out of the box, get in touch with Fairwinds.**
