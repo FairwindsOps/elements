@@ -13,17 +13,11 @@ Please see below for links and descriptions of each component:
 
 ### Command Line Software
 - [RBAC-Lookup](https://github.com/FairwindsOps/rbac-lookup ) - RBAC Lookup is a CLI that allows you to easily find Kubernetes roles and cluster roles bound to any user, service account, or group name. Binaries are generated with goreleaser for each release for simple installation.
-- [Reckoner](https://github.com/FairwindsOps/reckoner) - Reckoner is a command line helper for Helm that uses a YAML syntax to install and manage multiple Helm charts in a single file and allows installation of charts from a git commit/branch/release.
 - [Pluto](https://github.com/FairwindsOps/pluto) - This is a very simple utility to help users find deprecated Kubernetes apiVersions in their code repositories and their helm releases.
 - [Nova](https://github.com/FairwindsOps/Nova) - Nova scans your cluster for installed Helm charts, then cross-checks them against all known Helm repositories. If it finds an updated version of the chart you're using, or notices your current version is deprecated, it will let you know.
 
 
-## CI/CD Support
-- [rok8s-scripts](https://github.com/FairwindsOps/rok8s-scripts) - rok8s-scripts is a framework for building GitOps workflows with Docker and Kubernetes. By adding rok8s-scripts to your CI/CD pipeline, you can build, push, and deploy your applications using the set of best practices we've built at Fairwinds.
-
-
 ### In-Cluster Operations Software
-- [Astro](https://github.com/FairwindsOps/astro) - Astro is a Kubernetes operator that watches objects in your cluster for defined patterns, and manages DataDog monitors based on this state.
 - [Goldilocks](https://github.com/FairwindsOps/goldilocks ) - By using the Kubernetes vertical-pod-autoscaler in recommendation mode, we can see a suggestion for resource requests on each of our apps. Goldilocks creates a VPA for each deployment in a namespace and then queries them for information. —
 Goldilocks is also available in Fairwinds Insights.
 - [Gemini](https://github.com/FairwindsOps/gemini) - Gemini is a Kubernetes CRD and operator for managing VolumeSnapshots. This allows you
