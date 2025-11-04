@@ -32,15 +32,52 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 
 
 ### Cluster Add-Ons
-- [RBAC-manager](https://github.com/FairwindsOps/rbac-manager) - This is an operator that supports declarative configuration for RBAC with new custom resources. Instead of managing role bindings or service accounts directly, you can specify a desired state and RBAC Manager will make the necessary changes to achieve that state.
-- [metrics-server (AWS only)](https://github.com/kubernetes-sigs/metrics-server) - Provides resource usage metrics, such as container CPU and memory usage. 
-- [nginx-ingress](https://github.com/kubernetes/ingress-nginx) - Controller to manage Nginx configurations base on Kubernetes Ingress objects
-- [cert-manager](https://github.com/jetstack/cert-manager) - Automatically provision and manage TLS certificates in Kubernetes
-- [external-dns](https://github.com/kubernetes-sigs/external-dns) - ExternalDNS synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
-- [cluster-autoscaler](https://github.com/kubernetes/autoscaler) - Automatically adjusts the size of a Kubernetes Cluster so that all pods have a place to run and there are no unneeded nodes.
-(AWS Only):
-- [aws-alb-ingress-controller](https://github.com/kubernetes-sigs/aws-alb-ingress-controller) - The AWS ALB Ingress Controller satisfies Kubernetes ingress resources by provisioning Application Load Balancers.
-- [aws-iam-authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator) - A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster. 
+
+#### Networking & Load Balancing
+- **external-dns** - Automate DNS management
+- **ingress-nginx** - Manage HTTP and HTTPS routing
+- **AWS Load Balancer Controller** - AWS Load Balancer integration
+- **AWS VPC CNI** - Native AWS networking for Kubernetes
+- **Oauth2 Proxy** - Secure authentication for apps
+
+#### Security & Compliance
+- **cert-manager** - Automate TLS certificate management
+- **External Secrets** - Securely inject secrets
+- **Falco** - Runtime security monitoring
+- **RBAC Manager** - Simplify Kubernetes RBAC policies
+- **Cloudflare Origin CA Issuer** - Cloudflare certificate integration
+- **AWS Private CA Issuer** - AWS Private CA management
+
+#### Observability & Monitoring
+- **Insights Agent** - Cluster health insights
+- **Datadog Agent** - Kubernetes monitoring and APM
+- **Datadog Synthetics Private Location** - Synthetic monitoring for reliability
+- **Prometheus Stack** - Open-source metrics monitoring
+- **Metrics Server** - Resource usage monitoring
+- **OTEL Operator** - Open Telemetry integration
+
+#### Scaling & Cost Optimization
+- **Karpenter** - Automated Kubernetes node scaling
+- **Cluster Autoscaler** - Scale nodes dynamically
+- **Keda** - Event-driven autoscaling
+- **VPA** - Vertical Pod Autoscaler
+- **Goldilocks** - Optimize resource requests and limits
+- **Ocean Kubernetes Controller** - Spot instance management
+
+#### CI/CD & Workload Management
+- **Argo CD** - GitOps continuous deployment
+- **Helm Release Pruner** - Cleanup outdated Helm releases
+- **Gitlab Runner** - Run CI/CD jobs on Kubernetes
+
+#### Storage & Persistent Volumes
+- **AWS EBS CSI Driver** - Manage EBS volumes in Kubernetes
+- **AWS EFS CSI Driver** - Manage EFS volumes in Kubernetes
+- **Docker Registry** - Container registry for Kubernetes
+
+#### Maintenance & Upgrades
+- **kured** - Automated Kubernetes node reboots
+- **Telepresence** - Simplify local Kubernetes development
+- **Gloo** - API gateway and service mesh solutions 
 
 We welcome your input. If you have feedback, please submit an issue.
 
