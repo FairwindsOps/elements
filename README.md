@@ -1,7 +1,7 @@
 # Fairwinds Elements
 Fairwinds Elements is a suite of open source software to help manage Kubernetes infrastructure at enterprise scale used in Fairwinds' ClusterOps Managed Service and/or backed by Fairwinds Elements Support offering.
 
-Getting the right in-house expertise and cluster add-ons to get achieve _and_ operate production-ready Kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated. 
+Getting the right in-house expertise and cluster add-ons to get achieve _and_ operate production-ready Kubernetes in a consistent way across organizations is still out of reach for many. Once in production, adding clusters with consistent configurations is complicated.
 
 Fairwinds Elements leverages best-in-class Open Source software in a cohesive way to provide a complete platform independant of any single vendor.
 
@@ -32,20 +32,53 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 
 
 ### Cluster Add-Ons
-- [RBAC-manager](https://github.com/FairwindsOps/rbac-manager) - This is an operator that supports declarative configuration for RBAC with new custom resources. Instead of managing role bindings or service accounts directly, you can specify a desired state and RBAC Manager will make the necessary changes to achieve that state.
-- [metrics-server (AWS only)](https://github.com/kubernetes-sigs/metrics-server) - Provides resource usage metrics, such as container CPU and memory usage. 
-- [nginx-ingress](https://github.com/kubernetes/ingress-nginx) - Controller to manage Nginx configurations base on Kubernetes Ingress objects
-- [cert-manager](https://github.com/jetstack/cert-manager) - Automatically provision and manage TLS certificates in Kubernetes
-- [external-dns](https://github.com/kubernetes-sigs/external-dns) - ExternalDNS synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
-- [cluster-autoscaler](https://github.com/kubernetes/autoscaler) - Automatically adjusts the size of a Kubernetes Cluster so that all pods have a place to run and there are no unneeded nodes.
-(AWS Only):
-- [aws-alb-ingress-controller](https://github.com/kubernetes-sigs/aws-alb-ingress-controller) - The AWS ALB Ingress Controller satisfies Kubernetes ingress resources by provisioning Application Load Balancers.
-- [aws-iam-authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator) - A tool to use AWS IAM credentials to authenticate to a Kubernetes cluster. 
+
+#### Networking & Load Balancing
+- [external-dns](https://github.com/kubernetes-sigs/external-dns) - Automate DNS management
+- [ingress-nginx](https://github.com/kubernetes/ingress-nginx) - Manage HTTP and HTTPS routing
+- [AWS Load Balancer Controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller) - AWS Load Balancer integration
+- [AWS VPC CNI](https://github.com/aws/amazon-vpc-cni-k8s) - Native AWS networking for Kubernetes
+- [Oauth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy) - Secure authentication for apps
+
+#### Security & Compliance
+- [cert-manager](https://github.com/cert-manager/cert-manager) - Automate TLS certificate management
+- [External Secrets](https://github.com/external-secrets/external-secrets) - Securely inject secrets
+- [RBAC Manager](https://github.com/FairwindsOps/rbac-manager) - Simplify Kubernetes RBAC policies
+- [Cloudflare Origin CA Issuer](https://github.com/cloudflare/origin-ca-issuer) - Cloudflare certificate integration
+- [AWS Private CA Issuer](https://github.com/cert-manager/aws-privateca-issuer) - AWS Private CA management
+
+#### Observability & Monitoring
+- [Insights Agent](https://github.com/FairwindsOps/charts/tree/master/stable/insights-agent) - Cluster health insights
+- [Datadog Agent](https://github.com/DataDog/datadog-agent) - Kubernetes monitoring and APM
+- [Datadog Synthetics Private Location](https://docs.datadoghq.com/synthetics/private_locations/) - Synthetic monitoring for reliability
+- [Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus) - Open-source metrics monitoring
+- [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) - Resource usage monitoring
+- [OTEL Operator](https://github.com/open-telemetry/opentelemetry-operator) - Open Telemetry integration
+
+#### Scaling & Cost Optimization
+- [Karpenter](https://github.com/kubernetes-sigs/karpenter) - Automated Kubernetes node scaling
+- [Cluster Autoscaler](https://github.com/kubernetes/autoscaler) - Scale nodes dynamically
+- [Keda](https://github.com/kedacore/keda) - Event-driven autoscaling
+- [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) - Vertical Pod Autoscaler
+- [Goldilocks](https://github.com/FairwindsOps/goldilocks) - Optimize resource requests and limits
+- [Ocean Kubernetes Controller](https://github.com/spotinst/spotinst-kubernetes-helm-charts) - Spot instance management
+
+#### CI/CD & Workload Management
+- [Argo CD](https://github.com/argoproj/argo-cd) - GitOps continuous deployment
+- [Helm Release Pruner](https://github.com/FairwindsOps/helm-release-pruner) - Cleanup outdated Helm releases
+
+#### Storage & Persistent Volumes
+- [AWS EBS CSI Driver](https://github.com/kubernetes-sigs/aws-ebs-csi-driver) - Manage EBS volumes in Kubernetes
+- [AWS EFS CSI Driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver) - Manage EFS volumes in Kubernetes
+
+#### Maintenance & Upgrades
+- [kured](https://github.com/kubereboot/kured) - Automated Kubernetes node reboots
+- [Telepresence](https://github.com/telepresenceio/telepresence) - Simplify local Kubernetes development
 
 We welcome your input. If you have feedback, please submit an issue.
 
 ## Requirements
 
-Fairwinds Elements assumes the existence of Kubernetes, the necessity or value of various components of Fairwinds Elements will change based on where the Kubernetes cluster is running (AWS vs. GCP or Azure vs. Datacenter etc...). Fairwinds Elements can be leveraged as individual components, or together as a whole. 
+Fairwinds Elements assumes the existence of Kubernetes, the necessity or value of various components of Fairwinds Elements will change based on where the Kubernetes cluster is running (AWS vs. GCP or Azure vs. Datacenter etc...). Fairwinds Elements can be leveraged as individual components, or together as a whole.
 
 **Not there yet? For a service involving setting up Kubernetes and installing all of these components out of the box, get in touch with Fairwinds.**
