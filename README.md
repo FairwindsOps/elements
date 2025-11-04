@@ -34,50 +34,50 @@ to back up your PersistentVolumes on a regular schedule, retire old backups, and
 ### Cluster Add-Ons
 
 #### Networking & Load Balancing
-- **external-dns** - Automate DNS management
-- **ingress-nginx** - Manage HTTP and HTTPS routing
-- **AWS Load Balancer Controller** - AWS Load Balancer integration
-- **AWS VPC CNI** - Native AWS networking for Kubernetes
-- **Oauth2 Proxy** - Secure authentication for apps
+- [external-dns](https://github.com/kubernetes-sigs/external-dns) - Automate DNS management
+- [ingress-nginx](https://github.com/kubernetes/ingress-nginx) - Manage HTTP and HTTPS routing
+- [AWS Load Balancer Controller](https://github.com/kubernetes-sigs/aws-load-balancer-controller) - AWS Load Balancer integration
+- [AWS VPC CNI](https://github.com/aws/amazon-vpc-cni-k8s) - Native AWS networking for Kubernetes
+- [Oauth2 Proxy](https://github.com/oauth2-proxy/oauth2-proxy) - Secure authentication for apps
 
 #### Security & Compliance
-- **cert-manager** - Automate TLS certificate management
-- **External Secrets** - Securely inject secrets
-- **Falco** - Runtime security monitoring
-- **RBAC Manager** - Simplify Kubernetes RBAC policies
-- **Cloudflare Origin CA Issuer** - Cloudflare certificate integration
-- **AWS Private CA Issuer** - AWS Private CA management
+- [cert-manager](https://github.com/cert-manager/cert-manager) - Automate TLS certificate management
+- [External Secrets](https://github.com/external-secrets/external-secrets) - Securely inject secrets
+- [Falco](https://github.com/falcosecurity/falco) - Runtime security monitoring
+- [RBAC Manager](https://github.com/FairwindsOps/rbac-manager) - Simplify Kubernetes RBAC policies
+- [Cloudflare Origin CA Issuer](https://github.com/cloudflare/origin-ca-issuer) - Cloudflare certificate integration
+- [AWS Private CA Issuer](https://github.com/cert-manager/aws-privateca-issuer) - AWS Private CA management
 
 #### Observability & Monitoring
-- **Insights Agent** - Cluster health insights
-- **Datadog Agent** - Kubernetes monitoring and APM
-- **Datadog Synthetics Private Location** - Synthetic monitoring for reliability
-- **Prometheus Stack** - Open-source metrics monitoring
-- **Metrics Server** - Resource usage monitoring
-- **OTEL Operator** - Open Telemetry integration
+- [Insights Agent](https://github.com/FairwindsOps/charts/tree/master/stable/insights-agent) - Cluster health insights
+- [Datadog Agent](https://github.com/DataDog/datadog-agent) - Kubernetes monitoring and APM
+- [Datadog Synthetics Private Location](https://docs.datadoghq.com/synthetics/private_locations/) - Synthetic monitoring for reliability
+- [Prometheus Stack](https://github.com/prometheus-operator/kube-prometheus) - Open-source metrics monitoring
+- [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) - Resource usage monitoring
+- [OTEL Operator](https://github.com/open-telemetry/opentelemetry-operator) - Open Telemetry integration
 
 #### Scaling & Cost Optimization
-- **Karpenter** - Automated Kubernetes node scaling
-- **Cluster Autoscaler** - Scale nodes dynamically
-- **Keda** - Event-driven autoscaling
-- **VPA** - Vertical Pod Autoscaler
-- **Goldilocks** - Optimize resource requests and limits
-- **Ocean Kubernetes Controller** - Spot instance management
+- [Karpenter](https://github.com/kubernetes-sigs/karpenter) - Automated Kubernetes node scaling
+- [Cluster Autoscaler](https://github.com/kubernetes/autoscaler) - Scale nodes dynamically
+- [Keda](https://github.com/kedacore/keda) - Event-driven autoscaling
+- [VPA](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) - Vertical Pod Autoscaler
+- [Goldilocks](https://github.com/FairwindsOps/goldilocks) - Optimize resource requests and limits
+- [Ocean Kubernetes Controller](https://github.com/spotinst/spotinst-kubernetes-helm-charts) - Spot instance management
 
 #### CI/CD & Workload Management
-- **Argo CD** - GitOps continuous deployment
-- **Helm Release Pruner** - Cleanup outdated Helm releases
-- **Gitlab Runner** - Run CI/CD jobs on Kubernetes
+- [Argo CD](https://github.com/argoproj/argo-cd) - GitOps continuous deployment
+- [Helm Release Pruner](https://github.com/FairwindsOps/helm-release-pruner) - Cleanup outdated Helm releases
+- [Gitlab Runner](https://docs.gitlab.com/runner/install/kubernetes/) - Run CI/CD jobs on Kubernetes
 
 #### Storage & Persistent Volumes
-- **AWS EBS CSI Driver** - Manage EBS volumes in Kubernetes
-- **AWS EFS CSI Driver** - Manage EFS volumes in Kubernetes
-- **Docker Registry** - Container registry for Kubernetes
+- [AWS EBS CSI Driver](https://github.com/kubernetes-sigs/aws-ebs-csi-driver) - Manage EBS volumes in Kubernetes
+- [AWS EFS CSI Driver](https://github.com/kubernetes-sigs/aws-efs-csi-driver) - Manage EFS volumes in Kubernetes
+- [Docker Registry](https://github.com/distribution/distribution) - Container registry for Kubernetes
 
 #### Maintenance & Upgrades
-- **kured** - Automated Kubernetes node reboots
-- **Telepresence** - Simplify local Kubernetes development
-- **Gloo** - API gateway and service mesh solutions 
+- [kured](https://github.com/kubereboot/kured) - Automated Kubernetes node reboots
+- [Telepresence](https://github.com/telepresenceio/telepresence) - Simplify local Kubernetes development
+- [Gloo](https://github.com/solo-io/gloo) - API gateway and service mesh solutions 
 
 We welcome your input. If you have feedback, please submit an issue.
 
